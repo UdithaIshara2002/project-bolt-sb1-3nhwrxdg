@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Parking System</h1>
+            <div class="status-bar">
+                <div class="availability">
+                    <span id="available-count">2</span>
+                    <span>/</span>
+                    <span id="total-count">4</span>
+                    <p>Available Slots</p>
+                </div>
+                <div id="status-indicator" class="hidden">
+                    <div class="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                        <span>Parking Full</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="parking-grid">
+                <div class="parking-slot" data-slot="1">
+                    <div class="slot-number">1</div>
+                    <div class="slot-status available">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C19.7 4.6 16.1 1 12 1S4.3 4.6 3.5 11.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"></path><path d="M16 17a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                </div>
+                <div class="parking-slot" data-slot="2">
+                    <div class="slot-number">2</div>
+                    <div class="slot-status occupied">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C19.7 4.6 16.1 1 12 1S4.3 4.6 3.5 11.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"></path><path d="M16 17a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                </div>
+                <div class="parking-slot" data-slot="3">
+                    <div class="slot-number">3</div>
+                    <div class="slot-status available">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C19.7 4.6 16.1 1 12 1S4.3 4.6 3.5 11.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"></path><path d="M16 17a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                </div>
+                <div class="parking-slot" data-slot="4">
+                    <div class="slot-number">4</div>
+                    <div class="slot-status occupied">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C19.7 4.6 16.1 1 12 1S4.3 4.6 3.5 11.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2"></path><path d="M16 17a4 4 0 0 1-8 0"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
